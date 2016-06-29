@@ -1,0 +1,54 @@
+2016-06-21 10:21:34 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+)
+Stack Trace:
+#0 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/Database/Connection.php(108): Cake\Database\Connection->driver('Cake\\Database\\D...', Array)
+#1 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/Datasource/ConnectionRegistry.php(87): Cake\Database\Connection->__construct(Array)
+#2 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(93): Cake\Datasource\ConnectionRegistry->_create('Cake\\Database\\C...', 'default', Array)
+#3 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php(202): Cake\Core\ObjectRegistry->load('default', Array)
+#4 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(913): Cake\Datasource\ConnectionManager::get('default')
+#5 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(875): Bake\Shell\Task\ModelTask->_getAllTables()
+#6 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(889): Bake\Shell\Task\ModelTask->listAll()
+#7 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/bake/src/Shell/BakeShell.php(228): Bake\Shell\Task\ModelTask->listUnskipped()
+#8 [internal function]: Bake\Shell\BakeShell->all()
+#9 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/Console/Shell.php(444): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#12 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#13 /opt/lampp/htdocs/manage_coffee_trouser/bin/cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2016-06-24 10:10:49 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ArticlesFixture" not found. Fixture "app.articles" was referenced in test case "App\Test\TestCase\Controller\CategorysControllerTest".
+Stack Trace:
+#0 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureManager.php(101): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\CategorysControllerTest))
+#1 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureInjector.php(158): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\CategorysControllerTest))
+#2 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/Framework/TestResult.php(388): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CategorysControllerTest))
+#3 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/Framework/TestResult.php(644): PHPUnit_Framework_TestResult->startTest(Object(App\Test\TestCase\Controller\CategorysControllerTest))
+#4 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/Framework/TestCase.php(888): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\CategorysControllerTest))
+#5 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#6 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#7 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/TextUI/Command.php(162): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#8 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/TextUI/Command.php(113): PHPUnit_TextUI_Command->run(Array, true)
+#9 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#10 {main}
+
+
+2016-06-27 03:10:08 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ArticlesFixture" not found. Fixture "app.articles" was referenced in test case "App\Test\TestCase\Controller\CategorysControllerTest".
+Stack Trace:
+#0 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureManager.php(101): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\CategorysControllerTest))
+#1 /opt/lampp/htdocs/manage_coffee_trouser/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureInjector.php(158): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\CategorysControllerTest))
+#2 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/Framework/TestResult.php(388): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CategorysControllerTest))
+#3 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/Framework/TestResult.php(644): PHPUnit_Framework_TestResult->startTest(Object(App\Test\TestCase\Controller\CategorysControllerTest))
+#4 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/Framework/TestCase.php(888): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\CategorysControllerTest))
+#5 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#6 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#7 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/Framework/TestSuite.php(753): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#8 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(465): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#9 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/TextUI/Command.php(162): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array, true)
+#10 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/src/TextUI/Command.php(113): PHPUnit_TextUI_Command->run(Array, true)
+#11 /opt/lampp/htdocs/manage_coffee_trouser/vendor/phpunit/phpunit/phpunit(47): PHPUnit_TextUI_Command::main()
+#12 {main}
+
+

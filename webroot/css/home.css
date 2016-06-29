@@ -1,0 +1,57 @@
+.content {
+	min-height: 750px;
+}
+
+.sidebar {
+	height: 250px;
+}
+
+.icon-coffee {
+	margin-left: 50px;
+}
+
+.error-message {
+	color: red;
+	font-weight: bold;
+}
+
+ .info, .success, .warning, .error {
+	border: 1px solid;
+	margin: 10px 40px;
+	padding:15px 10px 15px 65px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	font-size: 125%;
+	width: 400px;
+
+}
+
+.success {
+	 color: #4F8A10; 
+	border-color: #4F8A10;
+	background-color: #DFF2BF;
+	background-image:url('../img/success.png');
+	padding: 20px 56px;
+}
+
+.error {
+	 color: #D8000C; 
+	border-color: #D8000C;
+	background-color: #FFBABA;
+	background-size: 126px 126px;
+	background-image: url('../img/error.png');
+	padding: 20px 102px;
+}
+
+.pagination {
+	margin-left: 300px;
+}
+
+.footer {
+	background: #000;
+	height: 50px;
+	text-align: center;
+	padding: 15px 0px;
+	color: #fff;
+	font-weight: bold;
+}
